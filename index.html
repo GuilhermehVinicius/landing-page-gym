@@ -30,9 +30,9 @@
         </div>
         <div class="form-container">
             <h1>Junte-se a Nós</h1>
-            <form action="#" method="post">
+            <form id="userForm" method="post">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu Nome" required>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
                 <label for="whatsapp">Whatsapp:</label>
@@ -46,17 +46,17 @@
         <h2>Escolha Seu Estilo</h2>
         <div class="styles-grid">
             <div class="style-item">
-                <img src="/assets/musculacao.png" alt="Musculação">
+                <img src="/assets/musculacao.png" alt="Icone de Musculação">
                 <h3>Musculação</h3>
                 <p>Fortaleça seu corpo e alcance seus objetivos com treinos personalizados.</p>
             </div>
             <div class="style-item">
-                <img src="/assets/danca.png" alt="Dança">
+                <img src="/assets/danca.png" alt="Icone de Dança">
                 <h3>Dança</h3>
                 <p>Dance, divirta-se e queime calorias com coreografias animadas e cheias de energia.</p>
             </div>
             <div class="style-item">
-                <img src="/assets/luta.png" alt="Luta">
+                <img src="/assets/luta.png" alt="Icone de Luta">
                 <h3>Luta</h3>
                 <p>Melhore seu físico e aprenda autodefesa com treinos intensos e desafiadores.</p>
             </div>
@@ -66,9 +66,9 @@
 
     <!-- Gallery Section -->
     <div class="gallery">
-        <img width="300" height="300" src="assets/musculacao.jpg" alt="Gallery Item">
-        <img width="300" height="300" src="assets/danca.jpg" alt="Gallery Item">
-        <img width="300" height="300" src="assets/luta.jpg" alt="Gallery Item">
+        <img width="300" height="300" src="assets/musculacao.jpg" alt="Homem fazendo musculação">
+        <img width="300" height="300" src="assets/danca.jpg" alt="Pessoas dançando e alegres">
+        <img width="300" height="300" src="assets/luta.jpg" alt="Pessoas com pose de luta">
     </div>
 
     <!-- Transformation Section -->
@@ -89,17 +89,14 @@
     </footer>
 </body>
 
-<script src="scripts.js"></script>
+
+<div id="alertBox" class="alert"></div>
 
 <script src="https://unpkg.com/imask"></script>
+<script src="scripts.js"></script>
 
-<script>
-    const inputElement = document.getElementById('whatsapp');
-    const maskOptions = {
-        mask: '(00) 00000-0000'
-    };
-    IMask(inputElement, maskOptions);
-</script>
+
+
 
 
 
