@@ -1,0 +1,258 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+
+/* Section: Form */
+.section-form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 1rem;
+    background: url("/assets/fundo.png") no-repeat center center / cover;
+}
+
+.section-form:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo-top-left {
+    position: absolute;
+    bottom: 12rem;
+}
+
+.title-primary {
+    position: relative;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+.title-primary span {
+    display: block;
+    margin-top: 5px;
+}
+
+.title-primary b {
+    color: #BEAF76;
+}
+
+.form-container {
+    position: relative;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid white;
+    color: white;
+    max-width: 400px;
+    width: 100%;
+    z-index: 1;
+}
+
+.form-container h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-container input {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-container button {
+    margin-top: 10px;
+    background-color: #BEAF76;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-container button:hover {
+    background-color: #d8c582;
+}
+
+/* Section: Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Section: Transformation */
+.section-transformation {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.section-transformation p {
+    margin: 20px auto;
+    max-width: 700px;
+    color: #666;
+}
+
+.section-transformation button {
+    color: #BEAF76;
+    background-color: white;
+    border: 2px solid #BEAF76;
+    border-radius: 8px;
+    padding: 10px 50px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.section-transformation button:hover {
+    background-color: #f5f5f5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+
+
+.section-styles {
+    text-align: center;
+    padding: 30px;
+    background-color: #e6e9af2a;
+}
+
+.section-styles h2 {
+    color: #BEAF76;
+    margin-bottom: 30px;
+}
+
+.styles-grid {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-item {
+    text-align: center;
+}
+
+.style-item img {
+    max-width: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .styles-grid {
+        display: block;
+        gap: 10px;
+    }
+    .style-item {
+        padding-top: 10px;
+    }
+    
+    .logo-top-left {
+        position: static;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+
+    .logo {
+        text-align: center; /* Centraliza a logo */
+    }
+
+
+}
+
+
+@media (min-width: 768px) {
+
+
+    .section-form {
+        padding: 8rem 2rem;
+    }
+
+    .title-primary {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .form-container {
+        margin-left: 2rem;
+    }
+    
+
+
+}
+
+@media (min-width: 1024px) {
+    .section-form {
+        justify-content: space-between;
+        padding: 8rem 100px;
+    }
+
+    .title-primary {
+        font-size: 3rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px 100px;
+    }
+}
+
+
