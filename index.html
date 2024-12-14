@@ -31,11 +31,11 @@
             <h1>Junte-se a Nós</h1>
             <form action="#" method="post">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu Nome" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="seuemail@email.com"required>
                 <label for="whatsapp">Whatsapp:</label>
-                <input type="tel" id="whatsapp" name="whatsapp" required>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(DDD) 90000-0000" required>
                 <button type="submit">Enviar</button>
             </form>
         </div>
@@ -65,16 +65,16 @@
 
     <!-- Gallery Section -->
     <div class="gallery">
-        <img src="https://images.pexels.com/photos/416754/pexels-photo-416754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gallery Item">
-        <img src="https://images.pexels.com/photos/12312/pexels-photo-12312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gallery Item">
-        <img src="https://images.pexels.com/photos/7045755/pexels-photo-7045755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gallery Item">
+        <img width="300" height="300" src="assets/musculacao.jpg" alt="Gallery Item">
+        <img width="300" height="300"src="assets/danca.jpg" alt="Gallery Item">
+        <img width="300" height="300" src="assets/luta.jpg" alt="Gallery Item">
     </div>
 
     <!-- Transformation Section -->
     <section class="section-transformation">
         <h2>Aqui Começa Sua Transformação</h2>
         <p>Na Fisio Space, oferecemos um ambiente acolhedor e motivador para você alcançar seus objetivos de saúde e bem-estar.</p>
-        <button>Inscreva-se</button>
+        <button onclick="voltarAoTopo()">Inscreva-se</button>
     </section>
 
     <!-- Footer -->
@@ -82,5 +82,19 @@
         <p>Copyright © Fisio Space – Todos os direitos reservados</p>
     </footer>
 </body>
+
+<script src="scripts.js"></script>
+
+<script src="https://unpkg.com/imask"></script>
+
+<script>
+    const inputElement = document.getElementById('whatsapp');
+    const maskOptions = {
+        mask: '(00) 00000-0000'
+    };
+    IMask(inputElement, maskOptions);
+</script>
+
+
 
 </html>
