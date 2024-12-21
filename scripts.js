@@ -43,7 +43,7 @@ form.addEventListener('submit', async (event) => {
 
     try {
         // Faz a requisição POST para a API
-        const response = await fetch('http://127.0.0.1:8000/leads/', {
+        const response = await fetch('http://54.87.163.140/leads/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
